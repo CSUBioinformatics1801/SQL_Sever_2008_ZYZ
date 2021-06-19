@@ -1,0 +1,541 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+电影票房数据库界面
+</name>
+</assembly>
+<members>
+<member name="T:电影票房数据库界面.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:电影票房数据库界面.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:电影票房数据库界面.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.ActorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.BoxofficeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.MovieDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.Movie_Actor_cnDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.PrizeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.UserTableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.MovieunreleasedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.ActorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.BoxofficeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.MovieRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.Movie_Actor_cnRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.PrizeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.UserTableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.MovieunreleasedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.ActorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.BoxofficeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.MovieRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.Movie_Actor_cnRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.PrizeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.UserTableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSet.MovieunreleasedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.ActorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.BoxofficeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.MovieTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.Movie_Actor_cnTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.PrizeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.UserTableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.MovieunreleasedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(电影票房数据库界面.BoxOfficeDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(电影票房数据库界面.BoxOfficeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(电影票房数据库界面.BoxOfficeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.UpdateAll(电影票房数据库界面.BoxOfficeDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.ActorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.BoxofficeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.Movie_Actor_cnDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieRatingDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieunreleasedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.PrizeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.UserTableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.ViewRatingDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.ActorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.BoxofficeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.Movie_Actor_cnRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieRatingRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieunreleasedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.PrizeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.UserTableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.ViewRatingRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.ActorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.BoxofficeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.Movie_Actor_cnRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieRatingRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.MovieunreleasedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.PrizeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.UserTableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEW.ViewRatingRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.ActorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.BoxofficeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.MovieTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.Movie_Actor_cnTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.MovieRatingTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.MovieunreleasedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.PrizeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.UserTableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.ViewRatingTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.UpdateUpdatedRows(电影票房数据库界面.BoxOfficeDataSetNEW,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.UpdateInsertedRows(电影票房数据库界面.BoxOfficeDataSetNEW,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.UpdateDeletedRows(电影票房数据库界面.BoxOfficeDataSetNEW,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.UpdateAll(电影票房数据库界面.BoxOfficeDataSetNEW)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetNEWTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewACBoxofficeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewACmoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewRatingDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewACBoxofficeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewACmoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewRatingRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewACBoxofficeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewACmoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetView.ViewRatingRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.ViewACBoxofficeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.ViewACmoneyTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.ViewRatingTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.UpdateUpdatedRows(电影票房数据库界面.BoxOfficeDataSetView,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.UpdateInsertedRows(电影票房数据库界面.BoxOfficeDataSetView,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.UpdateDeletedRows(电影票房数据库界面.BoxOfficeDataSetView,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.UpdateAll(电影票房数据库界面.BoxOfficeDataSetView)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:电影票房数据库界面.BoxOfficeDataSetViewTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

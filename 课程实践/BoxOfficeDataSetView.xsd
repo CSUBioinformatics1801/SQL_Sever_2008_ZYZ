@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BoxOfficeDataSetView" targetNamespace="http://tempuri.org/BoxOfficeDataSetView.xsd" xmlns:mstns="http://tempuri.org/BoxOfficeDataSetView.xsd" xmlns="http://tempuri.org/BoxOfficeDataSetView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="BoxOfficeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BoxOfficeConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.电影票房数据库界面.My.MySettings.GlobalReference.Default.BoxOfficeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewACBoxofficeTableAdapter" GeneratorDataComponentClassName="ViewACBoxofficeTableAdapter" Name="ViewACBoxoffice" UserDataComponentName="ViewACBoxofficeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BoxOfficeConnectionString (MySettings)" DbObjectName="BoxOffice.dbo.ViewACBoxoffice" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Actorname, SumBoxoffice FROM dbo.ViewACBoxoffice</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Actorname" DataSetColumn="Actorname" />
+              <Mapping SourceColumn="SumBoxoffice" DataSetColumn="SumBoxoffice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewACmoneyTableAdapter" GeneratorDataComponentClassName="ViewACmoneyTableAdapter" Name="ViewACmoney" UserDataComponentName="ViewACmoneyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BoxOfficeConnectionString (MySettings)" DbObjectName="BoxOffice.dbo.ViewACmoney" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Actorname, SUMRemuneration FROM dbo.ViewACmoney</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Actorname" DataSetColumn="Actorname" />
+              <Mapping SourceColumn="SUMRemuneration" DataSetColumn="SUMRemuneration" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewRatingTableAdapter" GeneratorDataComponentClassName="ViewRatingTableAdapter" Name="ViewRating" UserDataComponentName="ViewRatingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BoxOfficeConnectionString (MySettings)" DbObjectName="BoxOffice.dbo.ViewRating" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Movie, Rating FROM dbo.ViewRating</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Movie" DataSetColumn="Movie" />
+              <Mapping SourceColumn="Rating" DataSetColumn="Rating" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BoxOfficeDataSetView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BoxOfficeDataSetView" msprop:Generator_UserDSName="BoxOfficeDataSetView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewACBoxoffice" msprop:Generator_TableClassName="ViewACBoxofficeDataTable" msprop:Generator_TableVarName="tableViewACBoxoffice" msprop:Generator_TablePropName="ViewACBoxoffice" msprop:Generator_RowDeletingName="ViewACBoxofficeRowDeleting" msprop:Generator_RowChangingName="ViewACBoxofficeRowChanging" msprop:Generator_RowEvHandlerName="ViewACBoxofficeRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewACBoxofficeRowDeleted" msprop:Generator_UserTableName="ViewACBoxoffice" msprop:Generator_RowChangedName="ViewACBoxofficeRowChanged" msprop:Generator_RowEvArgName="ViewACBoxofficeRowChangeEvent" msprop:Generator_RowClassName="ViewACBoxofficeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Actorname" msprop:Generator_ColumnVarNameInTable="columnActorname" msprop:Generator_ColumnPropNameInRow="Actorname" msprop:Generator_ColumnPropNameInTable="ActornameColumn" msprop:Generator_UserColumnName="Actorname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SumBoxoffice" msprop:Generator_ColumnVarNameInTable="columnSumBoxoffice" msprop:Generator_ColumnPropNameInRow="SumBoxoffice" msprop:Generator_ColumnPropNameInTable="SumBoxofficeColumn" msprop:Generator_UserColumnName="SumBoxoffice" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ViewACmoney" msprop:Generator_TableClassName="ViewACmoneyDataTable" msprop:Generator_TableVarName="tableViewACmoney" msprop:Generator_TablePropName="ViewACmoney" msprop:Generator_RowDeletingName="ViewACmoneyRowDeleting" msprop:Generator_RowChangingName="ViewACmoneyRowChanging" msprop:Generator_RowEvHandlerName="ViewACmoneyRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewACmoneyRowDeleted" msprop:Generator_UserTableName="ViewACmoney" msprop:Generator_RowChangedName="ViewACmoneyRowChanged" msprop:Generator_RowEvArgName="ViewACmoneyRowChangeEvent" msprop:Generator_RowClassName="ViewACmoneyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Actorname" msprop:Generator_ColumnVarNameInTable="columnActorname" msprop:Generator_ColumnPropNameInRow="Actorname" msprop:Generator_ColumnPropNameInTable="ActornameColumn" msprop:Generator_UserColumnName="Actorname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUMRemuneration" msprop:Generator_ColumnVarNameInTable="columnSUMRemuneration" msprop:Generator_ColumnPropNameInRow="SUMRemuneration" msprop:Generator_ColumnPropNameInTable="SUMRemunerationColumn" msprop:Generator_UserColumnName="SUMRemuneration" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ViewRating" msprop:Generator_TableClassName="ViewRatingDataTable" msprop:Generator_TableVarName="tableViewRating" msprop:Generator_TablePropName="ViewRating" msprop:Generator_RowDeletingName="ViewRatingRowDeleting" msprop:Generator_RowChangingName="ViewRatingRowChanging" msprop:Generator_RowEvHandlerName="ViewRatingRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewRatingRowDeleted" msprop:Generator_UserTableName="ViewRating" msprop:Generator_RowChangedName="ViewRatingRowChanged" msprop:Generator_RowEvArgName="ViewRatingRowChangeEvent" msprop:Generator_RowClassName="ViewRatingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Movie" msprop:Generator_ColumnVarNameInTable="columnMovie" msprop:Generator_ColumnPropNameInRow="Movie" msprop:Generator_ColumnPropNameInTable="MovieColumn" msprop:Generator_UserColumnName="Movie">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rating" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRating" msprop:Generator_ColumnPropNameInRow="Rating" msprop:Generator_ColumnPropNameInTable="RatingColumn" msprop:Generator_UserColumnName="Rating" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewRating" />
+      <xs:field xpath="mstns:Movie" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
